@@ -13,34 +13,27 @@ export const headerFields = [
     },
     {
         id: 2,
+        type: "text",
+        sort: "sorting",
+        align: "text-left",
+        name: "ID"
+    },
+    {
+        id: 3,
         type: "media",
         sort: "sorting_asc",
         align: "text-left",
         name: "EMPLOYEE"
     },
     {
-        id: 3,
-        type: "text",
-        sort: "sorting",
-        align: "text-left",
-        name: "JOB TITLE"
-    },
-    {
         id: 4,
         type: "text",
         sort: "sorting",
         align: "text-left",
-        name: "HIRE DATE"
+        name: "DATE OF BIRTH"
     },
     {
         id: 5,
-        type: "text",
-        sort: "sorting",
-        align: "text-left",
-        name: "DOC"
-    },
-    {
-        id: 6,
         type: "badge",
         sort: "sorting",
         align: "text-left",
@@ -54,79 +47,89 @@ export const employeeData = [
         status: "probation",
         name: "Tony Stark",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "April 4, 1965",
+        played_by: "Robert Downey, Jr."
 
     },
     {
         emp_id: 2,
         status: "current",
-        name: "Tony Stark",
+        name: "Justin Hammer",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "November 5, 1968",
+        played_by: "Sam Rockwell"
 
     },
     {
         emp_id: 3,
         status: "probation",
-        name: "Tony Stark",
+        name: "Whiplash",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "September 16, 1952",
+        played_by: "Mickey Rourke"
 
     },
     {
         emp_id: 4,
         status: "current",
-        name: "Tony Stark",
+        name: "Happy Hogan",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "October 19, 1966",
+        played_by: "Jon Favreau"
 
     },
     {
         emp_id: 5,
         status: "current",
-        name: "Tony Stark",
+        name: "Thor",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "August 11, 1983",
+        played_by: "Chris Hemsworth"
 
     },
     {
         emp_id: 6,
         status: "current",
-        name: "Tony Stark",
+        name: "Captain America",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "June 13, 1981",
+        played_by: "Chris Evans"
 
     },
     {
         emp_id: 7,
         status: "current",
-        name: "Tony Stark",
+        name: "Howard Stark",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "June 2, 1978",
+        played_by: "Dominic Cooper"
 
     },
     {
         emp_id: 8,
         status: "current",
-        name: "Tony Stark",
+        name: "Pepper Potts",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "September 27, 1972",
+        played_by: "Gwyneth Paltrow"
 
     },
     {
         emp_id: 9,
         status: "layoff",
-        name: "Tony Stark",
+        name: "Natasha Romanoff",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "November 22, 1984",
+        played_by: "Scarlett Johansson"
 
     },
     {
         emp_id: 10,
         status: "resign",
-        name: "Tony Stark",
+        name: "Bruce Banner",
         profile_picture: null,
-        hire_date: "2018-01-01T00:00:00"
+        dob: "November 22, 1967",
+        played_by: "Mark Ruffalo"
 
     },
 ];

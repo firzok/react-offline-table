@@ -40,19 +40,16 @@ export default class App extends Component {
       row.push({ text: "Change Status", selected: employeeData[i].status, options: EmployeeStatus, onClick: this.changeStatus, onClickArg: employeeData[i] })
 
       // Column 3
-      const avatar = { topText: employeeData[i].name, bottomText: employeeData[i].emp_id, picture: employeeData[i].profile_picture };
-      row.push(avatar)
+      row.push(employeeData[i].emp_id ? employeeData[i].emp_id : "N/A");
 
       // Column 4
-      row.push(employeeData[i].designation ? employeeData[i].designation : "N/A");
+      const avatar = { topText: employeeData[i].name, bottomText: employeeData[i].played_by, picture: employeeData[i].profile_picture };
+      row.push(avatar)
 
       // Column 5
-      row.push((employeeData[i].hire_date === "" || employeeData[i].hire_date === null) ? 'N/A' : moment(employeeData[i].hire_date).format("YYYY-MM-DD"));
+      row.push((employeeData[i].dob === "" || employeeData[i].dob === null) ? 'N/A' : moment(employeeData[i].dob).format("YYYY-MM-DD"));
 
       // Column 6
-      row.push((employeeData[i].doc === "" || employeeData[i].doc === null) ? 'N/A' : moment(employeeData[i].doc).format("YYYY-MM-DD"));
-
-      // Column 7
       if (employeeData[i].status.toLowerCase() === "probation") {
         row.push({ class: "badge badge-info text-capitalize", data: "Probation" });
       } else if (employeeData[i].status.toLowerCase() === "current") {
@@ -79,7 +76,7 @@ export default class App extends Component {
           headerFields={headerFields}
           headerText={"Offline React Table"}
           data={_data}
-          showSno={true}
+          showSno={false}
           enableFilter={true}
           enableExport={true}
           exportHeader={{
