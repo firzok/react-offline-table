@@ -1,0 +1,632 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200107.133839.16490.0.001.json",
+    "dumpEventTime": "2020-01-07T13:38:39Z",
+    "dumpEventTimeStamp": "1578386319710",
+    "processId": 16490,
+    "cwd": "/home/firzok/Desktop/Offline table/react-offline-table/example",
+    "commandLine": [
+      "node",
+      "/home/firzok/Desktop/Offline table/react-offline-table/example/node_modules/react-scripts/scripts/start.js"
+    ],
+    "nodejsVersion": "v12.14.0",
+    "glibcVersionRuntime": "2.23",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.14.0",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-72-generic",
+    "osVersion": "#81~16.04.1-Ubuntu SMP Tue Nov 26 16:34:21 UTC 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2483,
+        "user": 4347700,
+        "nice": 18700,
+        "sys": 571700,
+        "idle": 136300500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2676,
+        "user": 4654500,
+        "nice": 7700,
+        "sys": 585200,
+        "idle": 136135400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2794,
+        "user": 4599500,
+        "nice": 76500,
+        "sys": 575200,
+        "idle": 136111400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2709,
+        "user": 4999800,
+        "nice": 5400,
+        "sys": 568400,
+        "idle": 135876100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2716,
+        "user": 5377800,
+        "nice": 3600,
+        "sys": 583900,
+        "idle": 135509700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2720,
+        "user": 5523900,
+        "nice": 116400,
+        "sys": 660600,
+        "idle": 131614800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2673,
+        "user": 4665600,
+        "nice": 25000,
+        "sys": 570500,
+        "idle": 135952000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2704,
+        "user": 4525400,
+        "nice": 2900,
+        "sys": 598800,
+        "idle": 136248500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2755,
+        "user": 3457400,
+        "nice": 7500,
+        "sys": 875200,
+        "idle": 136901100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2754,
+        "user": 4566500,
+        "nice": 3000,
+        "sys": 623000,
+        "idle": 136277200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2695,
+        "user": 4109100,
+        "nice": 2300,
+        "sys": 574800,
+        "idle": 136601400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+        "speed": 2750,
+        "user": 3716600,
+        "nice": 3200,
+        "sys": 577400,
+        "idle": 137167000,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp6s0",
+        "internal": false,
+        "mac": "bc:30:5b:cb:60:16",
+        "address": "192.168.1.55",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp6s0",
+        "internal": false,
+        "mac": "bc:30:5b:cb:60:16",
+        "address": "fe80::5304:23c5:10a3:dc0e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "Firzok-WorkStation"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b04935",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x00000000009db9e3",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b39f1e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b3a299",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000ce5635",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000ce5cc6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]"
+    },
+    {
+      "pc": "0x0000000000cf1b5a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf2a65",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf5478",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000cbbda7",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [node]"
+    },
+    {
+      "pc": "0x0000000000ff1e0b",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x0000000001374fd9",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2168987648,
+    "totalCommittedMemory": 2163923040,
+    "usedMemory": 1933355576,
+    "availableMemory": 99150656,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 29624752,
+        "capacity": 16759808,
+        "used": 860720,
+        "available": 15899088
+      },
+      "old_space": {
+        "memorySize": 2021502976,
+        "committedMemory": 2020753224,
+        "capacity": 1857894888,
+        "used": 1820460352,
+        "available": 37434536
+      },
+      "code_space": {
+        "memorySize": 1474560,
+        "committedMemory": 1394368,
+        "capacity": 1207552,
+        "used": 1207552,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 3149824,
+        "committedMemory": 3074416,
+        "capacity": 1891920,
+        "used": 1891920,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 108994560,
+        "committedMemory": 108994560,
+        "capacity": 108899120,
+        "used": 108899120,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3616,
+        "used": 3616,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1194.66,
+    "kernelCpuSeconds": 50.4914,
+    "cpuConsumptionPercent": 194.555,
+    "maxRss": 2377330688,
+    "pageFaults": {
+      "IORequired": 9,
+      "IONotRequired": 9194228
+    },
+    "fsActivity": {
+      "reads": 1880,
+      "writes": 24
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 593.82,
+    "kernelCpuSeconds": 19.7012,
+    "cpuConsumptionPercent": 95.8627,
+    "fsActivity": {
+      "reads": 1880,
+      "writes": 16
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "GNOME_KEYRING_PID": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "USER": "firzok",
+    "UNITY_HAS_3D_SUPPORT": "true",
+    "UNITY_DEFAULT_PROFILE": "unity",
+    "LANGUAGE": "en_US",
+    "UPSTART_INSTANCE": "",
+    "LC_TIME": "en_US.UTF-8",
+    "npm_config_user_agent": "npm/6.13.4 node/v12.14.0 linux x64",
+    "npm_config_always_auth": "",
+    "XDG_SEAT": "seat0",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "XDG_SESSION_TYPE": "x11",
+    "COMPIZ_CONFIG_PROFILE": "ubuntu",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "",
+    "npm_node_execpath": "/usr/local/bin/node",
+    "SHLVL": "1",
+    "npm_package_dependencies_react_offline_table": "file:..",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "HOME": "/home/firzok",
+    "QT4_IM_MODULE": "xim",
+    "OLDPWD": "/home/firzok/Desktop/Offline table/react-offline-table",
+    "npm_config_force": "",
+    "DESKTOP_SESSION": "ubuntu",
+    "NVM_NODEJS_ORG_MIRROR": "https://nodejs.org/dist",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "QT_LINUX_ACCESSIBILITY_ALWAYS_ON": "1",
+    "GTK_MODULES": "gail:atk-bridge:unity-gtk-module",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "LC_MONETARY": "en_US.UTF-8",
+    "INSTANCE": "",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/firzok/.npmrc",
+    "DBUS_STARTER_BUS_TYPE": "session",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-n21qKk3cUR,guid=c158ff9021823992104f039c5e14136f",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "npm_package_dependencies_react_scripts": "^1.1.4",
+    "npm_package_description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "GNOME_KEYRING_CONTROL": "",
+    "NVM_DIR": "/home/firzok/.nvm",
+    "npm_package_homepage": "https://firzok.github.io/react-offline-table",
+    "npm_package_readmeFilename": "README.md",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "true",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "QT_QPA_PLATFORMTHEME": "appmenu-qt5",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "IM_CONFIG_PHASE": "1",
+    "SESSIONTYPE": "gnome-session",
+    "UPSTART_JOB": "dbus",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "firzok",
+    "GTK_IM_MODULE": "ibus",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/bin/bash",
+    "WINDOWID": "77594634",
+    "_": "/usr/local/bin/npm",
+    "npm_package_private": "true",
+    "npm_config_dry_run": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_prefix": "/usr/local",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "XDG_SESSION_ID": "c2",
+    "TERM": "xterm-256color",
+    "DBUS_DEBUG_OUTPUT": "1",
+    "npm_config_cache": "/home/firzok/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "npm_package_scripts_start": "react-scripts start",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "GTK2_MODULES": "overlay-scrollbar",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/firzok/Desktop/Offline table/react-offline-table/example/node_modules/.bin:/home/firzok/bin:/home/firzok/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "SESSION_MANAGER": "local/Firzok-WorkStation:@/tmp/.ICE-unix/2813,unix/Firzok-WorkStation:/tmp/.ICE-unix/2813",
+    "GDM_LANG": "en_US",
+    "PAPERSIZE": "letter",
+    "NVM_IOJS_ORG_MIRROR": "https://iojs.org/dist",
+    "npm_package_name": "react-offline-table-example",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/usr/local/bin/node",
+    "LC_ADDRESS": "en_US.UTF-8",
+    "XDG_MENU_PREFIX": "gnome-",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "DISPLAY": ":0",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LC_TELEPHONE": "en_US.UTF-8",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "npm_package_dependencies_react_dom": "^16.4.1",
+    "npm_config_umask": "0002",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "XMODIFIERS": "@im",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XAUTHORITY": "/home/firzok/.Xauthority",
+    "npm_config_fund": "true",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_message": "%s",
+    "npm_lifecycle_script": "react-scripts start",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/firzok",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "npm_package_scripts_test": "react-scripts test --env=jsdom",
+    "npm_config_ca": "",
+    "npm_config_cert": "",
+    "npm_config_global": "",
+    "npm_config_link": "",
+    "SHELL": "/bin/bash",
+    "LC_NAME": "en_US.UTF-8",
+    "npm_package_version": "0.0.0",
+    "npm_config_access": "",
+    "npm_config_also": "",
+    "npm_config_save": "true",
+    "npm_config_unicode": "true",
+    "npm_lifecycle_event": "start",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "ubuntu",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"start\"],\"original\":[\"start\"]}",
+    "npm_config_before": "",
+    "npm_config_long": "",
+    "npm_config_production": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "npm_config_auth_type": "legacy",
+    "npm_config_node_version": "12.14.0",
+    "npm_config_tag": "latest",
+    "LC_MEASUREMENT": "en_US.UTF-8",
+    "UPSTART_EVENTS": "starting",
+    "npm_config_git_tag_version": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_script_shell": "",
+    "npm_config_shrinkwrap": "true",
+    "GPG_AGENT_INFO": "/home/firzok/.gnupg/S.gpg-agent:0:1",
+    "UPSTART_SESSION": "unix:abstract=/com/ubuntu/upstart-session/1000/2600",
+    "LC_IDENTIFICATION": "en_US.UTF-8",
+    "npm_package_license": "MIT",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_save_exact": "",
+    "npm_config_strict_ssl": "true",
+    "XDG_VTNR": "7",
+    "QT_IM_MODULE": "ibus",
+    "npm_config_dev": "",
+    "npm_config_globalconfig": "/usr/local/etc/npmrc",
+    "npm_config_init_module": "/home/firzok/.npm-init.js",
+    "npm_config_parseable": "",
+    "PWD": "/home/firzok/Desktop/Offline table/react-offline-table/example",
+    "npm_config_globalignorefile": "/usr/local/etc/npmignore",
+    "npm_execpath": "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+    "CLUTTER_IM_MODULE": "xim",
+    "DBUS_STARTER_ADDRESS": "unix:abstract=/tmp/dbus-n21qKk3cUR,guid=c158ff9021823992104f039c5e14136f",
+    "NVM_CD_FLAGS": "",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_searchstaleness": "900",
+    "LC_NUMERIC": "en_US.UTF-8",
+    "npm_package_dependencies_prop_types": "^15.6.2",
+    "npm_config_node_options": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "LC_PAPER": "en_US.UTF-8",
+    "npm_config_group": "1000",
+    "npm_config_init_author_email": "",
+    "npm_config_searchexclude": "",
+    "VTE_VERSION": "4205",
+    "npm_config_git": "git",
+    "npm_config_optional": "true",
+    "NVM_RC_VERSION": "",
+    "JOB": "xsession-init",
+    "npm_package_dependencies_react": "^16.4.1",
+    "npm_config_json": "",
+    "INIT_CWD": "/home/firzok/Desktop/Offline table/react-offline-table/example",
+    "BABEL_ENV": "development",
+    "NODE_ENV": "development",
+    "NODE_PATH": ""
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 128349,
+      "hard": 128349
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2"
+  ]
+}
