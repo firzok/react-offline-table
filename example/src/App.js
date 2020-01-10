@@ -78,10 +78,6 @@ export default class App extends Component {
           data={_data}
           showSno={false}
           enableFilter={true}
-          enableExport={true}
-          exportHeader={{
-            report: "employeesData"
-          }}
           pages={pages}
           colors={colors}
         />

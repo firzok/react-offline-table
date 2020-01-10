@@ -409,12 +409,8 @@ function OfflineTable(props) {
             </label>
 
           </div>
-          {props.enableExport ?
-            <div key="moreActions" className="ml-auto" title="Export Records Shown Below">
-              <button className="btn btn-primary" onClick={() => onClickExport()}>Export</button>
-            </div>
-            : ""}
-          <div className={`col-lg-2 col-xl-1 ml-1 ${props.enableExport ? "" : "ml-auto"}`}>
+
+          <div className={`col-lg-2 col-xl-1 ml-1 ml-auto`}>
 
             <div className="form-group" title="Records Per Page">
               <Select
