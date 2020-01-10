@@ -50,19 +50,14 @@ export default class App extends Component {
       row.push((employeeData[i].dob === "" || employeeData[i].dob === null) ? 'N/A' : moment(employeeData[i].dob).format("YYYY-MM-DD"));
 
       // Column 6
-      if (employeeData[i].status.toLowerCase() === "probation") {
-        row.push({ class: "badge badge-info text-capitalize", data: "Probation" });
-      } else if (employeeData[i].status.toLowerCase() === "current") {
-        row.push({ class: "badge badge-success text-capitalize", data: "Permanent" });
+      if (employeeData[i].status === "Support") {
+        row.push({ class: "badge badge-info text-capitalize", data: "Support" });
       }
-      else if (employeeData[i].status.toLowerCase() === "onNotice") {
-        row.push({ class: "badge badge-secondary text-capitalize", data: "On Notice" });
+      else if (employeeData[i].status === "Main") {
+        row.push({ class: "badge badge-success text-capitalize", data: "Main" });
       }
-      else if (employeeData[i].status.toLowerCase() === "resign") {
-        row.push({ class: "badge badge-danger text-capitalize", data: "Resign" });
-      }
-      else if (employeeData[i].status.toLowerCase() === "layoff") {
-        row.push({ class: "badge badge-warning text-capitalize", data: "Layoff" });
+      else if (employeeData[i].status === "Villain") {
+        row.push({ class: "badge badge-danger text-capitalize", data: "Villain" });
       }
       _data.push(row);
     }

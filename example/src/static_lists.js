@@ -14,14 +14,14 @@ export const headerFields = [
     {
         id: 2,
         type: "text",
-        sort: "sorting",
+        sort: "sorting_asc",
         align: "text-left",
         name: "ID"
     },
     {
         id: 3,
         type: "media",
-        sort: "sorting_asc",
+        sort: "sorting",
         align: "text-left",
         name: "EMPLOYEE"
     },
@@ -44,7 +44,7 @@ export const headerFields = [
 export const employeeData = [
     {
         emp_id: 1,
-        status: "probation",
+        status: "Main",
         name: "Tony Stark",
         profile_picture: null,
         dob: "April 4, 1965",
@@ -53,7 +53,7 @@ export const employeeData = [
     },
     {
         emp_id: 2,
-        status: "current",
+        status: "Villain",
         name: "Justin Hammer",
         profile_picture: null,
         dob: "November 5, 1968",
@@ -62,7 +62,7 @@ export const employeeData = [
     },
     {
         emp_id: 3,
-        status: "probation",
+        status: "Villain",
         name: "Whiplash",
         profile_picture: null,
         dob: "September 16, 1952",
@@ -71,7 +71,7 @@ export const employeeData = [
     },
     {
         emp_id: 4,
-        status: "current",
+        status: "Support",
         name: "Happy Hogan",
         profile_picture: null,
         dob: "October 19, 1966",
@@ -80,7 +80,7 @@ export const employeeData = [
     },
     {
         emp_id: 5,
-        status: "current",
+        status: "Main",
         name: "Thor",
         profile_picture: null,
         dob: "August 11, 1983",
@@ -89,7 +89,7 @@ export const employeeData = [
     },
     {
         emp_id: 6,
-        status: "current",
+        status: "Main",
         name: "Captain America",
         profile_picture: null,
         dob: "June 13, 1981",
@@ -98,7 +98,7 @@ export const employeeData = [
     },
     {
         emp_id: 7,
-        status: "current",
+        status: "Support",
         name: "Howard Stark",
         profile_picture: null,
         dob: "June 2, 1978",
@@ -107,7 +107,7 @@ export const employeeData = [
     },
     {
         emp_id: 8,
-        status: "current",
+        status: "Support",
         name: "Pepper Potts",
         profile_picture: null,
         dob: "September 27, 1972",
@@ -116,7 +116,7 @@ export const employeeData = [
     },
     {
         emp_id: 9,
-        status: "layoff",
+        status: "Main",
         name: "Natasha Romanoff",
         profile_picture: null,
         dob: "November 22, 1984",
@@ -125,7 +125,7 @@ export const employeeData = [
     },
     {
         emp_id: 10,
-        status: "resign",
+        status: "Main",
         name: "Bruce Banner",
         profile_picture: null,
         dob: "November 22, 1967",

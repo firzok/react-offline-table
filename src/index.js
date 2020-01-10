@@ -94,7 +94,7 @@ function OfflineTable(props) {
               break;
             case "text":
 
-              if (col.toLowerCase().includes(filterText)) {
+              if (String(col).toLowerCase().includes(filterText)) {
                 filtered.push(row);
               }
 
