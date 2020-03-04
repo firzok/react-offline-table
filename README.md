@@ -4,6 +4,12 @@
 
 [![NPM](https://img.shields.io/npm/v/react-offline-table.svg)](https://www.npmjs.com/package/react-offline-table) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Example
+
+
+[https://firzok.github.io/react-offline-table/](https://firzok.github.io/react-offline-table/)
+
+
 ## Install
 
 ```bash
