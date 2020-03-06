@@ -250,7 +250,7 @@ function OfflineTable(props) {
       )
     }
     headerFields.forEach(element => {
-      console.log(element.name, ('sort' in element) ? element.sort : null);
+      //console.log(element.name, ('sort' in element) ? element.sort : null);
     });
     header.push(headerFields.map((row, idx) =>
       <th role="row"
