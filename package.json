@@ -59,6 +59,8 @@
     "dist"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "moment": "^2.24.0",
     "react-js-pagination": "^3.0.2",
     "react-select": "^3.0.8"
