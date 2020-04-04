@@ -71,7 +71,7 @@ function OfflineTable(props) {
 
     var filtered = [];
 
-    if (filterText && filterText.length > 0) {
+    if (filterTextToCompare && filterTextToCompare.length > 0) {
       for (var i = 0; i < data.length; i++) {
         var row = data[i];
 
@@ -81,22 +81,22 @@ function OfflineTable(props) {
           switch (headerFields[j].type) {
             case "media":
               if (
-                col.topText.toLowerCase().includes(filterText) ||
-                col.bottomText.toLowerCase().includes(filterText)
+                col.topText.toLowerCase().includes(filterTextToCompare) ||
+                col.bottomText.toLowerCase().includes(filterTextToCompare)
               ) {
                 filtered.push(row);
               }
 
               break;
             case "text":
-              if (String(col).toLowerCase().includes(filterText)) {
+              if (String(col).toLowerCase().includes(filterTextToCompare)) {
                 filtered.push(row);
               }
 
               break;
 
             case "badge":
-              if (col.data.toLowerCase().includes(filterText)) {
+              if (col.data.toLowerCase().includes(filterTextToCompare)) {
                 filtered.push(row);
               }
 
@@ -226,17 +226,12 @@ function OfflineTable(props) {
   }
 
   function renderHeader() {
-    for (i = 0; i < headerFields.length(); i++) {
+    for (let i = 0; i < headerFields.length; i++) {
       if (headerFields[i].sort) {
         headerFields[i].sort =
           headerFields[i].id === sortBy ? headerFields[i].sort : "sorting";
       }
     }
-    // headerFields.map((column, index) => {
-    //   if (column.sort) {
-    //     column.sort = column.id === sortBy ? column.sort : "sorting";
-    //   }
-    // });
     var header = [];
     if (props.showSno) {
       header.push(
@@ -267,9 +262,7 @@ function OfflineTable(props) {
 
     return (
       <thead>
-        <tr role="row" key={Math.random()}>
-          {header}
-        </tr>
+        <tr role="row">{header}</tr>
       </thead>
     );
   }
