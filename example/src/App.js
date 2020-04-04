@@ -5,11 +5,10 @@ import {
   employeeData,
   EmployeeStatus,
   pages,
-  colors
+  colors,
 } from "./static_lists";
 
 import OfflineTable from "react-offline-table";
-
 import moment from "moment";
 
 import { faEye, faEdit } from "@fortawesome/free-regular-svg-icons";
@@ -44,13 +43,13 @@ export default class App extends Component {
         {
           icon: faEye,
           className: "text-success-600 cursor-pointer mr-2",
-          callBack: this.viewEmployee.bind(this, employeeData[i].emp_id)
+          callBack: this.viewEmployee.bind(this, employeeData[i].emp_id),
         },
         {
           icon: faEdit,
           className: "text-success-600 cursor-pointer mr-2",
-          callBack: this.editEmployee.bind(this, employeeData[i].emp_id)
-        }
+          callBack: this.editEmployee.bind(this, employeeData[i].emp_id),
+        },
       ];
       row.push(actions);
 
@@ -60,7 +59,7 @@ export default class App extends Component {
         selected: employeeData[i].status,
         options: EmployeeStatus,
         onClick: this.changeStatus,
-        onClickArg: employeeData[i]
+        onClickArg: employeeData[i],
       });
 
       // Column 3
@@ -70,7 +69,7 @@ export default class App extends Component {
       const avatar = {
         topText: employeeData[i].name,
         bottomText: employeeData[i].played_by,
-        picture: employeeData[i].profile_picture
+        picture: employeeData[i].profile_picture,
       };
       row.push(avatar);
 
@@ -85,17 +84,17 @@ export default class App extends Component {
       if (employeeData[i].status === "Support") {
         row.push({
           class: "badge badge-info text-capitalize",
-          data: "Support"
+          data: "Support",
         });
       } else if (employeeData[i].status === "Main") {
         row.push({
           class: "badge badge-success text-capitalize",
-          data: "Main"
+          data: "Main",
         });
       } else if (employeeData[i].status === "Villain") {
         row.push({
           class: "badge badge-danger text-capitalize",
-          data: "Villain"
+          data: "Villain",
         });
       }
       _data.push(row);

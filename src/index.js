@@ -15,8 +15,6 @@ function OfflineTable(props) {
   const [activePage, setActivePage] = useState(1);
 
   const [data, setData] = useState(props.data);
-  // console.log(props.data)
-  // const [viewData, setViewData] = useState(data.slice(0, size))
   const [totalRecords, _] = useState(data.length);
 
   const [headerFields, setHeaderFields] = useState(props.headerFields);
@@ -242,7 +240,7 @@ function OfflineTable(props) {
     var header = [];
     if (props.showSno) {
       header.push(
-        <th role="row" key={"sno"}>
+        <th role="row" key={"a" + Date.now() + Math.random() + Math.random()}>
           {"Sno."}
         </th>
       );
@@ -254,7 +252,7 @@ function OfflineTable(props) {
       headerFields.map((row, idx) => (
         <th
           role="row"
-          key={idx}
+          key={"b" + Date.now() + Math.random() + Math.random()}
           className={` ${row.align ? row.align : ""} ${
             "sort" in row ? row.sort : ""
           }`}
@@ -301,16 +299,23 @@ function OfflineTable(props) {
       var thisRow = [];
 
       if (props.showSno) {
-        thisRow.push(<td key={index}>{index + 1}</td>);
+        thisRow.push(
+          <td key={"c" + Date.now() + Math.random() + Math.random()}>
+            {index + 1}
+          </td>
+        );
       }
 
       if (props.showActions) {
         if (typeof action.icon === "string") {
           thisRow.push(
-            <td className="text-center">
+            <td
+              className="text-center"
+              key={"d" + Date.now() + Math.random() + Math.random()}
+            >
               {props.actions.map((action, actionIdx) => (
                 <i
-                  key={actionIdx}
+                  key={"e" + Date.now() + Math.random() + Math.random()}
                   className={action.icon}
                   onClick={() => action.callBack(row)}
                 />
@@ -319,10 +324,13 @@ function OfflineTable(props) {
           );
         } else {
           thisRow.push(
-            <td className="text-center">
+            <td
+              className="text-center"
+              key={"f" + Date.now() + Math.random() + Math.random()}
+            >
               {props.actions.map((action, actionIdx) => (
                 <FontAwesomeIcon
-                  key={actionIdx}
+                  key={"g" + Date.now() + Math.random() + Math.random()}
                   icon={action.icon}
                   className={action.className ? action.className : ""}
                   onClick={() => action.callBack(row)}
@@ -341,12 +349,12 @@ function OfflineTable(props) {
 
           if (headerFields[subindex].type === "action") {
             thisRow.push(
-              <td className="text-center">
+              <td className="text-center" key={"rowtd" + subindex}>
                 {col.map((action, actionIdx) => {
                   if (typeof action.icon === "string") {
                     return (
                       <i
-                        key={actionIdx}
+                        key={"h" + Date.now() + Math.random() + Math.random()}
                         className={action.icon}
                         onClick={() => action.callBack(row)}
                       />
@@ -354,7 +362,7 @@ function OfflineTable(props) {
                   } else {
                     return (
                       <FontAwesomeIcon
-                        key={actionIdx}
+                        key={"i" + Date.now() + Math.random() + Math.random()}
                         icon={action.icon}
                         className={action.className ? action.className : ""}
                         onClick={() => action.callBack(row)}
@@ -366,16 +374,25 @@ function OfflineTable(props) {
             );
           } else if (headerFields[subindex].type === "badge") {
             return (
-              <td className={"text-nowrap " + alignClass}>
+              <td
+                className={"text-nowrap " + alignClass}
+                key={"j" + Date.now() + Math.random() + Math.random()}
+              >
                 {" "}
-                <span key={subindex} className={col.class}>
+                <span
+                  key={"k" + Date.now() + Math.random() + Math.random()}
+                  className={col.class}
+                >
                   {col.data}
                 </span>
               </td>
             );
           } else if (headerFields[subindex].type === "text") {
             return (
-              <td className={alignClass} key={subindex}>
+              <td
+                className={alignClass}
+                key={"l" + Date.now() + Math.random() + Math.random()}
+              >
                 {col}
               </td>
             );
@@ -390,8 +407,12 @@ function OfflineTable(props) {
               <button
                 className="btn rounded-round btn-icon btn-lg"
                 style={style}
+                key={"m" + Date.now() + Math.random() + Math.random()}
               >
-                <span className="letter-icon text-uppercase text-white">
+                <span
+                  className="letter-icon text-uppercase text-white"
+                  key={"n" + Date.now() + Math.random() + Math.random()}
+                >
                   {initials}
                 </span>
               </button>
@@ -413,18 +434,39 @@ function OfflineTable(props) {
                   width="40"
                   height="40"
                   alt=""
+                  key={"o" + Date.now() + Math.random() + Math.random()}
                 />
               );
             }
             return (
-              <td className={alignClass}>
-                <div className="media">
-                  <div className="ml-2 mr-2">{defaultProfilePicture}</div>
-                  <div className="media-body">
-                    <div className="font-weight-semibold text-capitalize">
+              <td
+                className={alignClass}
+                key={"p" + Date.now() + Math.random() + Math.random()}
+              >
+                <div
+                  className="media"
+                  key={"q" + Date.now() + Math.random() + Math.random()}
+                >
+                  <div
+                    className="ml-2 mr-2"
+                    key={"r" + Date.now() + Math.random() + Math.random()}
+                  >
+                    {defaultProfilePicture}
+                  </div>
+                  <div
+                    className="media-body"
+                    key={"s" + Date.now() + Math.random() + Math.random()}
+                  >
+                    <div
+                      className="font-weight-semibold text-capitalize"
+                      key={"t" + Date.now() + Math.random() + Math.random()}
+                    >
                       {col.topText}
                     </div>
-                    <span className="text-muted font-size-sm">
+                    <span
+                      className="text-muted font-size-sm"
+                      key={"u" + Date.now() + Math.random() + Math.random()}
+                    >
                       {col.bottomText}
                     </span>
                   </div>
@@ -438,18 +480,26 @@ function OfflineTable(props) {
               dropdownClass = "c-dropdown-menu";
             }
             return (
-              <td className="text-nowrap">
-                <div className="list-icons-item dropdown">
+              <td
+                className="text-nowrap"
+                key={"v" + Date.now() + Math.random() + Math.random()}
+              >
+                <div
+                  className="list-icons-item dropdown"
+                  key={"w" + Date.now() + Math.random() + Math.random()}
+                >
                   <a
                     href="#"
                     className="list-icons-item dropdown-toggle"
                     style={{ color: "#22a2b1" }}
                     data-toggle="dropdown"
                     aria-expanded="false"
+                    key={"x" + Date.now() + Math.random() + Math.random()}
                   >
                     {col.text}
                   </a>
                   <div
+                    key={"y" + Date.now() + Math.random() + Math.random()}
                     className={`dropdown-menu ${dropdownClass}`}
                     x-placement="bottom-start"
                     style={{
@@ -464,6 +514,7 @@ function OfflineTable(props) {
                         <i
                           className="ml-auto icon-checkmark2"
                           style={__style}
+                          key={"z" + Date.now() + Math.random() + Math.random()}
                         ></i>
                       );
                       if (status.value != col.selected) {
@@ -472,7 +523,9 @@ function OfflineTable(props) {
                       }
                       return (
                         <span
-                          key={"status -" + idx}
+                          key={
+                            "aa" + Date.now() + Math.random() + Math.random()
+                          }
                           onClick={col.onClick.bind(
                             this,
                             status.value,
@@ -494,7 +547,11 @@ function OfflineTable(props) {
         })
       );
 
-      return <tr key={index}>{thisRow}</tr>;
+      return (
+        <tr key={"ab" + Date.now() + Math.random() + Math.random()}>
+          {thisRow}
+        </tr>
+      );
     });
   }
 
