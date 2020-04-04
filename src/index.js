@@ -244,7 +244,7 @@ function OfflineTable(props) {
   }
 
   function renderHeader() {
-    for (i = 0; i < headerFields.length(); i++) {
+    for (var i = 0; i < headerFields.length; i++) {
       if (headerFields[i].sort) {
         headerFields[i].sort =
           headerFields[i].id === sortBy ? headerFields[i].sort : "sorting";
