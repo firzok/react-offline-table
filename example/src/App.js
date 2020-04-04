@@ -111,6 +111,7 @@ export default class App extends Component {
           enableFilter={true}
           pages={pages}
           colors={colors}
+          key={123}
         />
       </div>
     );

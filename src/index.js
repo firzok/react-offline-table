@@ -82,39 +82,23 @@ function OfflineTable(props) {
 
           switch (headerFields[j].type) {
             case "media":
-<<<<<<< HEAD
               if (
                 col.topText.toLowerCase().includes(filterText) ||
                 col.bottomText.toLowerCase().includes(filterText)
               ) {
-=======
-
-              if (col.topText.toLowerCase().includes(filterTextToCompare) ||
-                col.bottomText.toLowerCase().includes(filterTextToCompare)) {
->>>>>>> 370b10c... Removed Extraneous use of lower casing
                 filtered.push(row);
               }
 
               break;
             case "text":
-<<<<<<< HEAD
               if (String(col).toLowerCase().includes(filterText)) {
-=======
-
-              if (String(col).toLowerCase().includes(filterTextToCompare)) {
->>>>>>> 370b10c... Removed Extraneous use of lower casing
                 filtered.push(row);
               }
 
               break;
 
             case "badge":
-<<<<<<< HEAD
               if (col.data.toLowerCase().includes(filterText)) {
-=======
-
-              if (col.data.toLowerCase().includes(filterTextToCompare)) {
->>>>>>> 370b10c... Removed Extraneous use of lower casing
                 filtered.push(row);
               }
 
@@ -244,7 +228,7 @@ function OfflineTable(props) {
   }
 
   function renderHeader() {
-    for (var i = 0; i < headerFields.length; i++) {
+    for (i = 0; i < headerFields.length(); i++) {
       if (headerFields[i].sort) {
         headerFields[i].sort =
           headerFields[i].id === sortBy ? headerFields[i].sort : "sorting";
