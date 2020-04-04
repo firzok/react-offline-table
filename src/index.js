@@ -4,7 +4,7 @@ import Pagination from "react-js-pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function OfflineTable(props) {
-  let sortByElement = props.headerFields.find(function(element) {
+  let sortByElement = props.headerFields.find(function (element) {
     if ("sort" in element) {
       return element.sort !== "sorting";
     }
@@ -90,11 +90,7 @@ function OfflineTable(props) {
 
               break;
             case "text":
-              if (
-                String(col)
-                  .toLowerCase()
-                  .includes(filterText)
-              ) {
+              if (String(col).toLowerCase().includes(filterText)) {
                 filtered.push(row);
               }
 
@@ -250,7 +246,7 @@ function OfflineTable(props) {
         </th>
       );
     }
-    headerFields.forEach(element => {
+    headerFields.forEach((element) => {
       //console.log(element.name, ('sort' in element) ? element.sort : null);
     });
     header.push(
@@ -285,11 +281,11 @@ function OfflineTable(props) {
     setIsDownloadingSample(true);
     axios
       .get(EXPORT, { headers })
-      .then(res => {
+      .then((res) => {
         window.open("http://" + res.data.url);
         setIsDownloadingSample(false);
       })
-      .catch(error => {
+      .catch((error) => {
         setIsDownloadingSample(false);
         var message = "Error occurred while downloading Template!";
         if ("response" in error) {
@@ -386,7 +382,7 @@ function OfflineTable(props) {
             const initials = col.topText.charAt(0).toLowerCase();
 
             const style = {
-              backgroundColor: props.colors[initials]
+              backgroundColor: props.colors[initials],
             };
 
             var defaultProfilePicture = (
@@ -408,7 +404,7 @@ function OfflineTable(props) {
               defaultProfilePicture = (
                 <img
                   src={col.picture}
-                  onError={e => {
+                  onError={(e) => {
                     e.target.onerror = null;
                     e.target.src = defaultProfilePicture;
                   }}
@@ -458,7 +454,7 @@ function OfflineTable(props) {
                     style={{
                       position: "absolute",
                       willChange: "transform: top: 0px; left: 0px",
-                      transform: "translate3d(0px, 16px, 0px)"
+                      transform: "translate3d(0px, 16px, 0px)",
                     }}
                   >
                     {col.options.map((status, idx) => {
@@ -515,7 +511,7 @@ function OfflineTable(props) {
                 type="search"
                 value={filterValue}
                 placeholder={"Type to filter..."}
-                onChange={e => {
+                onChange={(e) => {
                   filterData(e);
                 }}
               />
@@ -525,7 +521,7 @@ function OfflineTable(props) {
           <div className={`col-lg-2 col-xl-1 ml-1 ml-auto`}>
             <div className="form-group" title="Records Per Page">
               <Select
-                value={props.pages.find(option => option.value === size)}
+                value={props.pages.find((option) => option.value === size)}
                 valueKey="value"
                 labelKey="label"
                 onChange={onLimitChange}
@@ -542,7 +538,7 @@ function OfflineTable(props) {
           <div className="col-lg-3 col-xl-2 ml-auto">
             <div className="form-group" title="Records Per Page">
               <Select
-                value={props.pages.find(option => option.value === size)}
+                value={props.pages.find((option) => option.value === size)}
                 valueKey="value"
                 labelKey="label"
                 onChange={onLimitChange}
@@ -614,7 +610,7 @@ function OfflineTable(props) {
               filterValue.length > 0 ? filteredData.length : data.length
             }
             pageRangeDisplayed={5}
-            onChange={e => handlePageChange(e)}
+            onChange={(e) => handlePageChange(e)}
             itemClass={"page-item"}
             linkClass={"page-link"}
             prevPageText={"prev"}
